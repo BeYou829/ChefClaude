@@ -1,7 +1,4 @@
 import Anthropic from "@anthropic-ai/sdk";
-// import { HfInference } from "@hugging face/inference";
-
-// console.log(import.meta.env.VITE_ANTHROPIC_API_KEY);
 
 const SYSTEM_PROMPT = `Ready for a recipe
 You are an assistant that receives a list of ingredients that a user has and suggests a recipe they
