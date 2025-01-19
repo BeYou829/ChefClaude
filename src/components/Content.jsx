@@ -16,7 +16,6 @@ export default function Content() {
   async function getRecipe() {
     const responseRecipe = await getRecipeFromChefClaude(ingredients);
     setRecipe(responseRecipe);
-    console.log(responseRecipe);
   }
   return (
     <main>
