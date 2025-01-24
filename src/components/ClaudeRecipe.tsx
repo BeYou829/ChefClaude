@@ -7,5 +7,10 @@ type Props = {
 };
 export default function ClaudeRecipe(props: Props) {
   const recipeMarkdown = props.recipe;
-  return <Markdown className="recipe-content">{recipeMarkdown}</Markdown>;
+  return (
+    <section className="recipe-content" aria-live="polite">
+      <hr />
+      <Markdown>{recipeMarkdown}</Markdown>
+    </section>
+  );
 }
