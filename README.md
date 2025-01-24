@@ -9,6 +9,7 @@ Asegúrate de tener instalados los siguientes programas en tu máquina:
 - [Node.js](https://nodejs.org/) (preferentemente la versión LTS)
 - [npm](https://www.npmjs.com/) (que viene incluido con Node.js)
 - [Vite](https://vitejs.dev/)
+- Una clave API de [Anthropic](https://www.anthropic.com/). La IA utilizada en este proyecto es `Claude-3`, y necesitarás una clave para poder utilizarla.
 
 ## Instalación
 
@@ -25,15 +26,20 @@ Asegúrate de tener instalados los siguientes programas en tu máquina:
    ```
 
 3. Instala las dependencias del proyecto:
+
    ```bash
    npm install
    ```
 
+4. Crea un archivo `.env` en el directorio raíz de tu proyecto y agrega tu clave API de Anthropic:
+   ```
+   VITE_ANTHROPIC_API_KEY=tu-clave-api
+   ```
+
 ## Correr la aplicación
 
-Una vez instaladas las dependencias, puedes ejecutar la aplicación en tu entorno local con el siguiente comando:
+Una vez instaladas las dependencias y configurada la clave API, puedes ejecutar la aplicación en tu entorno local con el siguiente comando:
 
 ```bash
 npm run dev
-
 ```
